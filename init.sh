@@ -1,7 +1,6 @@
-printf '\n\nUpdating system and installing git and curl\n\n'
+printf '\n\nUpdating system\n\n'
 sleep 2
 sudo apt update && sudo apt upgrade
-sudo apt install git curl -y
 
 printf '\n\nInstalling Liquorix kernel\n\n'
 sleep 2
