@@ -1,6 +1,6 @@
 printf '\n\nInstall i3\n\n'
 sleep 2
-sudo apt install i3 xorg tint2 rofi -y
+sudo apt install i3 xorg tint2 i3blocks rofi -y
 
 printf '\n\nInstall i3-gaps\n\n'
 sleep 2
@@ -28,6 +28,8 @@ git clone https://github.com/renanreboredo/dotfiles.git
 cd dotfiles
 rm ~/.config/i3/config ~/.config/rofi/config 
 cp i3/config ~/.config/i3/config
+cp i3/i3blocks.conf ~/.config/i3/i3blocks.conf
+cp i3/scripts ~/.config/i3/scripts
 cp rofi/config ~/.config/rofi/config
 cp /etc/X11/xinit/xinitrc ~/.xinitrc
 echo 'exec i3' >> ~/.xinitrc
