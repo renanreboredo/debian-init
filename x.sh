@@ -5,9 +5,10 @@ sudo apt install i3 xorg tint2 i3blocks rofi kitty -y
 printf '\n\nInstall i3-gaps\n\n'
 sleep 2
 
-sudo apt install build-essential libxcb1-dev libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev libxcb-icccm4-dev libyajl-dev \
-libstartup-notification0-dev libxcb-randr0-dev libev-dev libxcb-cursor-dev libxcb-xinerama0-dev libxcb-xkb-dev  \
-libxkbcommon-dev libxkbcommon-x11- libxcb-shape0-dev libxcb-xrm-dev autoconf xutils-dev libtool automake -y
+sudo apt install -y build-essential autoconf xutils-dev libtool automake dh-autoreconf libxcb-keysyms1-dev libpango1.0-dev \
+libxcb-util0-dev xcb libxcb1-dev libxcb-icccm4-dev libyajl-dev libev-dev libxcb-xkb-dev libxcb-cursor-dev libxkbcommon-dev \ 
+libxcb-xinerama0-dev libxkbcommon-x11-dev libstartup-notification0-dev libxcb-randr0-dev libxcb-xrm0 libxcb-xrm-dev \
+libxcb-shape0 libxcb-shape0-dev
 
 cd ~/tmp
 git clone https://www.github.com/Airblader/i3 i3-gaps
