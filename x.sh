@@ -5,7 +5,7 @@ sudo apt install i3 xorg tint2 i3blocks rofi kitty -y
 printf '\n\nInstall i3-gaps\n\n'
 sleep 2
 
-sudo apt install libxcb1-dev libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev libxcb-icccm4-dev libyajl-dev \
+sudo apt install build-essential libxcb1-dev libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev libxcb-icccm4-dev libyajl-dev \
 libstartup-notification0-dev libxcb-randr0-dev libev-dev libxcb-cursor-dev libxcb-xinerama0-dev libxcb-xkb-dev  \
 libxkbcommon-dev libxkbcommon-x11-dev libxcb-xrm-dev autoconf xutils-dev libtool automake -y
 
