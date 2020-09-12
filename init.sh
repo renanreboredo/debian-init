@@ -25,3 +25,7 @@ nix-channel --add https://github.com/rycee/home-manager/archive/master.tar.gz ho
 nix-channel --update
 export NIX_PATH=$HOME/.nix-defexpr/channels${NIX_PATH:+:}$NIX_PATH
 nix-shell '<home-manager>' -A install
+
+printf '\n\nInit Home Manager configuration\n\n'
+sleep 2
+cp home.nix  ~/.config/nixpkgs/home.nix
