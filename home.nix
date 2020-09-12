@@ -8,6 +8,8 @@
     i3lock    # screen lock
     i3status  # sys info
     scrot     # for screenshot
+    xorg.libX11
+    xorg.libXft
 
     # xorg.utilmacros
     # xorg.xcursorgen
