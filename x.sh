@@ -1,6 +1,6 @@
 printf '\n\nInstall i3\n\n'
 sleep 2
-sudo apt install i3 xorg tint2 i3blocks rofi -y
+sudo apt install i3 xorg tint2 i3blocks rofi kitty -y
 
 printf '\n\nInstall i3-gaps\n\n'
 sleep 2
@@ -31,6 +31,7 @@ cp i3/config ~/.config/i3/config
 cp i3/i3blocks.conf ~/.config/i3/i3blocks.conf
 cp i3/scripts ~/.config/i3/scripts
 cp rofi/config ~/.config/rofi/config
+cp kitty/kitty.conf ~/.config/kitty/kitty.conf
 cp /etc/X11/xinit/xinitrc ~/.xinitrc
 echo 'exec i3' >> ~/.xinitrc
 mkdir ~/Pictures
