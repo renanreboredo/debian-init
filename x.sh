@@ -9,7 +9,7 @@ sudo apt install libxcb1-dev libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-de
 libstartup-notification0-dev libxcb-randr0-dev libev-dev libxcb-cursor-dev libxcb-xinerama0-dev libxcb-xkb-dev  / 
 libxkbcommon-dev libxkbcommon-x11-dev libxcb-xrm-dev autoconf xutils-dev libtool automake
 
-cd tmp
+cd ~/tmp
 git clone https://www.github.com/Airblader/i3 i3-gaps
 cd i3-gaps
 git checkout gaps && git pull
@@ -29,7 +29,7 @@ cd dotfiles
 cp i3/config ~/.config/i3/config
 cp /etc/X11/xinit/xinitrc ~/.xinitrc
 echo 'exec i3' >> ~/.xinitrc
+mkdir ~/Pictures
 cd ~/tmp/debian-init
-mkdir Pictures
-cp wallpaper.jpg Pictures
+cp wallpaper.jpg ~/Pictures
 startx
